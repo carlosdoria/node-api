@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // informa onde vão ficar os arquivos em js
+    "outDir": "./dist",
+    // possibilita utilização do import/export
+    "module": "commonjs",
+    "target": "es2019",
+    // converte o import/export em required
+    "esModuleInterop": true,
+    // permite arquivos de configuração em js
+    "allowJs": true,
+    "strictNullChecks": true
+  }
+}

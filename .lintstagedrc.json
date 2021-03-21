@@ -1,0 +1,7 @@
+{
+  "*.ts": [
+    "eslint src --max-warnings=0 --fix",
+    "yarn test:staged",
+    "git add"
+  ]
+}
