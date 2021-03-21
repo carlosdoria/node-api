@@ -9,6 +9,6 @@
     "esModuleInterop": true,
     // permite arquivos de configuração em js
     "allowJs": true,
-    "strictNullChecks": true
+    // "strictNullChecks": true
   }
 }

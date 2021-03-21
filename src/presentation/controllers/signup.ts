@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { HttpResponse, HttpRequest } from '../protocols/https'
+
 export class SignUpController {
-  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-  handle (httpRequest: any): any {
+  handle (httpRequest: HttpRequest): HttpResponse {
     if (!httpRequest.body.name) {
       return {
         statusCode: 400,
