@@ -1,5 +1,5 @@
 import { HttpResponse, HttpRequest, Controller, IEmailValidator, IAddAccount } from './sigup-protocols'
-import { badRequest, serverError } from '../../helpers/http-helper'
+import { badRequest, serverError, success } from '../../helpers/http-helper'
 import { InvalidParamError, MissingParamError } from '../../errors'
 
 export class SignUpController implements Controller {
@@ -37,10 +37,7 @@ export class SignUpController implements Controller {
         password
       })
 
-      return {
-        statusCode: 200,
-        body: accountCreated
-      }
+      return success(accountCreated)
     } catch (error) {
       return serverError()
     }
